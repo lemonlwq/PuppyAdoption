@@ -57,7 +57,7 @@ fun DogDetails(dog: Dog, onAdopt: (Dog) -> Unit = {}) {
                     .padding(16.dp),
                 backgroundColor = buttonRed
             ) {
-                Text(text = stringResource(R.string.plus),style = MaterialTheme.typography.button)
+                Text(text = stringResource(R.string.plus), style = MaterialTheme.typography.button)
             }
         }
         Column(Modifier.padding(16.dp, 8.dp)) {
