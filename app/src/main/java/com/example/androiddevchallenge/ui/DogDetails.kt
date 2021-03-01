@@ -37,7 +37,7 @@ import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.R
 import com.example.androiddevchallenge.data.Dog
 import com.example.androiddevchallenge.ui.theme.background
-import com.example.androiddevchallenge.ui.theme.purple200
+import com.example.androiddevchallenge.ui.theme.buttonRed
 
 @Composable
 fun DogDetails(dog: Dog, onAdopt: (Dog) -> Unit = {}) {
@@ -58,7 +58,7 @@ fun DogDetails(dog: Dog, onAdopt: (Dog) -> Unit = {}) {
                 Modifier
                     .align(Alignment.BottomEnd)
                     .padding(16.dp),
-                backgroundColor = purple200
+                backgroundColor = buttonRed
             ) {
                 Text(text = stringResource(R.string.plus), style = MaterialTheme.typography.button)
             }
