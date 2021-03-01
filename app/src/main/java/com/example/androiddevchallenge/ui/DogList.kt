@@ -18,17 +18,23 @@ package com.example.androiddevchallenge.ui
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -65,16 +71,17 @@ fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
             Image(
                 painterResource(dog.picture),
                 "Picture of dog: ${dog.name}",
-                Modifier.size(140.dp)
+                Modifier
+                    .size(140.dp)
                     .padding(8.dp)
                     .shadow(8.dp, CircleShape),
                 contentScale = ContentScale.Crop
             )
             Column(Modifier.padding(8.dp)) {
                 Text(dog.name, style = MaterialTheme.typography.h4)
-                Text("breed: ${dog.breed}",color = textGrey)
-                Text("location: ${dog.location}",color = textGrey)
-                Text("age: ${dog.age}",color = textGrey)
+                Text("breed: ${dog.breed}", color = textGrey)
+                Text("location: ${dog.location}", color = textGrey)
+                Text("age: ${dog.age}", color = textGrey)
             }
         }
     }
