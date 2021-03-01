@@ -23,7 +23,6 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.lifecycle.viewmodel.compose.viewModel
-
 import com.example.androiddevchallenge.MainViewModel
 import kotlinx.coroutines.launch
 

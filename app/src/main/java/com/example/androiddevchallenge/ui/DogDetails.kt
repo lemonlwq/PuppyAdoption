@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.R
@@ -56,7 +57,7 @@ fun DogDetails(dog: Dog, onAdopt: (Dog) -> Unit = {}) {
                     .padding(16.dp),
                 backgroundColor = buttonRed
             ) {
-                Text(text = "＋",style = MaterialTheme.typography.button)
+                Text(text = stringResource(R.string.plus),style = MaterialTheme.typography.button)
             }
         }
         Column(Modifier.padding(16.dp, 8.dp)) {
