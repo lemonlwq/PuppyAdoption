@@ -51,7 +51,7 @@ fun Home() {
         viewModel.currentDog?.let {
             DogDetails(it) {
                 coroutineScope.launch {
-                    snackbarHostState.showSnackbar("${it.name} is now a member of your family!")
+                    snackbarHostState.showSnackbar("${it.name} is now a member of your family! ao...")
                 }
             }
         }
